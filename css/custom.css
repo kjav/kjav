@@ -1,3 +1,31 @@
 .hero a.link {
   color: #3273dc !important;
 }
+
+a.navlink {
+height: 0;
+}
+
+.hero.software {
+  -webkit-clip-path: polygon(0 10%, 25% 0%, 85% 0, 0 15%, 0 0);
+  clip-path: polygon(0 10%, 25% 0, 85% 0, 0% 15%, 0 0%);
+}
+
+.hero.software.scrolled {
+  animation-duration: 0.8s;
+  animation-name: softwarestripe;
+  -webkit-clip-path: polygon(0 20%, 35% 0%, 65% 0, 0 35%, 0 0);
+  clip-path: polygon(0 20%, 35% 0, 65% 0, 0% 35%, 0 0%);
+}
+
+@keyframes softwarestripe {
+  from {
+    -webkit-clip-path: polygon(0 10%, 25% 0%, 85% 0, 0 15%, 0 0);
+    clip-path: polygon(0 10%, 25% 0, 85% 0, 0% 15%, 0 0%);
+  }
+
+  to {
+    -webkit-clip-path: polygon(0 20%, 35% 0%, 65% 0, 0 35%, 0 0);
+    clip-path: polygon(0 20%, 35% 0, 65% 0, 0% 35%, 0 0%);
+  }
+}
