@@ -29,3 +29,56 @@ height: 0;
     clip-path: polygon(0 20%, 35% 0, 65% 0, 0% 35%, 0 0%);
   }
 }
+
+a.navbar-item:hover {
+  box-sizing: border-box;
+  border-bottom: 5px solid rgba(0,0,0, 0.15);
+  border-right: 5px solid rgba(0,0,0, 0.15);
+}
+
+.hero-head h1.title {
+  padding: 2rem;
+}
+
+div#iceland-image-gallery img {
+  width: 100%;
+}
+
+div.iceland-text {
+  padding: 4em;
+  padding-top: 1em;
+}
+
+div.iceland-text div.maketitle {
+  text-align: center;
+}
+
+div.iceland-text h2 {
+  font-size: 240%;
+  font-weight: bold;
+}
+
+div.iceland-text h3.sectionHead:not(:first-of-type) {
+  padding-top: 1em;
+}
+
+div.iceland-text h3, div.iceland-text .author {
+  font-size: 160%;
+}
+
+div#iceland-image-gallery div.modal .caption {
+  padding: 0.3em;
+  font-size: 1.2em;
+}
+
+.software-content h2.imped {
+  background-image: url(../img/imp.png);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  padding-left: 1.5em;
+  font-size: 4em;
+}
+
+.software-content h3 {
+  opacity: 0.6;
+}

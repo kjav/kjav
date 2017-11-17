@@ -1,0 +1,93 @@
+div.qimp-container {
+  margin: 30px;
+  background-color: #000000;
+  color: #d10056;
+  font-family: "Tauri", sans-serif;
+  position: relative;
+  height: 250px;
+}
+
+div.qimp-container table {
+  border: none;
+}
+
+div.qimp-container table tr {
+  font-size: 21px;
+}
+
+div.qimp-container tr:nth-child(2n) {
+  background-color: #222;
+}
+
+div.qimp-container button#openfiles {
+  height: 24px;
+}
+
+div.qimp-container button {
+  background-color: #d10056;
+  color: white;
+  font-size: 21px;
+  font-family: sans-serif;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+div.qimp-container button.flip {
+  background-color: white;
+  display: inline-block;
+  height: 24px;
+  padding: 0px;
+  margin: 0px;
+  color: #d10056;
+}
+
+div.qimp-container input.number {
+  width: 60px;
+  background-color: #d10056;
+  color: white;
+  font-size: 21px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 24px;
+  text-align: center;
+}
+
+div.qimp-container div.input {
+  background-color: #d10056;
+  color: white;
+  display: inline-block;
+  font-size: 21px;
+  height: 24px;
+  padding: 0px;
+  margin: 0px;
+  display: inline-block;
+  font-family: sans-serif;
+}
+
+div.qimp-container div#seektext {
+  height: 1rem;
+  position: absolute;
+  top: -1.8rem;
+  left: 25rem;
+  color: white;
+  padding: 0.2rem;
+  font-size: 1rem;
+  opacity: 0;
+  transition: 0.14s ease opacity;
+}
+
+div.qimp-container div#seekbar {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 26.6em;
+  border-left: 1px solid white;
+  opacity: 0;
+  transition: 0.14s ease opacity;
+}
+
+div.qimp-container div#seektext.active, div.qimp-container div#seekbar.active {
+  opacity: 1;
+}

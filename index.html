@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="iso-8859-1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sam Lee</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="lib/big.css">
+    <link rel="stylesheet" href="lib/imp.css">
     <script src="js/scroll.js"></script>
+    <script src="lib/snap.svg-min.js"></script>
   </head>
-  <body>
+  <body onkeypress="var modals = document.getElementsByClassName('modal'); for (var i = 0; i < modals.length; i++) { modals[i].classList.remove('is-active'); }">
     <section class="hero is-white is-fullheight">
     <div class="hero-head">
-    <nav class="navbar is-warning" style="height: calc(-0.7em + 128px); background-color: #ffdd57" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-warning" style="height: 120px; background-color: #ffdd57" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <!-- navbar items, navbar burger... -->
         <figure class="image is-128x128" style="left: 2em; top: 1em;">
@@ -36,7 +39,8 @@
             I make <a class="link" href="#software">software</a>, <a class="link" href="#websites">websites</a>, <a class="link" href="#apps">apps</a>, and <a class="link" href="#extensions">browser extensions</a>.
           </h1>
           <h2 class="subtitle">
-            I also <a class="link" href="#">ride a bike</a>
+            I also <a class="link" href="#iceland">ride a bike</a>.<br />
+            <a class="link" href="#contact">Get in touch with me.</a>
           </h2>
         </div>
       </div>
@@ -44,11 +48,20 @@
     <section class="hero is-black is-fullheight">
       <div class="hero-head">
         <h1 class="title" style="font-size: 6rem;">
-        <i class="fa fa-terminal" aria-hidden="true"></i>Software
+        <i class="fa fa-terminal" aria-hidden="true"></i> Software
         </h1>
       </div>
       <div class="hero-body">
-        <div class="container">
+        <div class="container software-content">
+          <h2 class="title imped">Qimp</h2>
+          <h3 class="subtitle">Sound cue software developed for the Oxford Imps</h3>
+          <div class="card">
+            <div class="card-content qimp-container">
+              <figure class="image is-4by3">
+                <img src="img/qimp1.png" />
+              </figure>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -56,11 +69,44 @@
       <a name="software" class="navlink"></a>
       <div class="hero-head">
         <h1 class="title" style="font-size: 6rem;">
-        <i class="fa fa-terminal" aria-hidden="true"></i>Software
+        <i class="fa fa-terminal" aria-hidden="true"></i> Software
         </h1>
       </div>
       <div class="hero-body">
         <div class="container">
+          <div class="item">
+            <h2 class="title">Qimp</h2>
+            <h3 class="subtitle">Sound cue software developed for the Oxford Imps</h3>
+            <div class="card">
+              <div class="card-content qimp-container">
+                <figure class="image is-4by3">
+                  <img src="img/qimp1.png" />
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h2 class="title">FaceBlock</h2>
+            <h3 class="subtitle">Computer vision application used to automatically censor personal information in pictures.</h3>
+            <div class="card">
+              <div class="card-content qimp-container">
+                <figure class="image is-4by3">
+                  <img src="img/faceblock.png" />
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h2 class="title">Drum tab converter</h2>
+            <h3 class="subtitle">A functional program written in Haskell which converts drum tabs to MusicXML file, an open format for sheet music representation.</h3>
+            <div class="card">
+              <div class="card-content qimp-container">
+                <figure class="image is-4by3">
+                  <img src="img/qimp1.png" />
+                </figure>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -68,11 +114,44 @@
       <a name="websites" class="navlink"></a>
       <div class="hero-head">
         <h1 class="title" style="font-size: 6rem;">
-        <i class="fa fa-code" aria-hidden="true"></i>Websites
+        <i class="fa fa-code" aria-hidden="true"></i> Websites
         </h1>
       </div>
       <div class="hero-body">
         <div class="container">
+          <div class="item">
+            <h2 class="title">Noisy Leaf</h2>
+            <h3 class="subtitle">Website for </h3>
+            <div class="card">
+              <div class="card-content qimp-container">
+                <figure class="image is-4by3">
+                  <img src="img/noisyleaf.png" />
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h2 class="title">101drum</h2>
+            <h3 class="subtitle">Drum tab website with intelligent search feature.</h3>
+            <div class="card">
+              <div class="card-content qimp-container">
+                <figure class="image is-4by3">
+                  <img src="img/101drum.png" />
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h2 class="title">Malaria Map</h2>
+            <h3 class="subtitle"></h3>
+            <div class="card">
+              <div class="card-content qimp-container">
+                <figure class="image is-4by3">
+                  <img src="img/malariamap.png" />
+                </figure>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -80,11 +159,33 @@
       <a name="apps" class="navlink"></a>
       <div class="hero-head">
         <h1 class="title" style="font-size: 6rem;">
-        <i class="fa fa-mobile" aria-hidden="true"></i>Apps
+        <i class="fa fa-mobile" aria-hidden="true"></i> Apps
         </h1>
       </div>
       <div class="hero-body">
         <div class="container">
+          <div class="item">
+            <h2 class="title">Simple Torch</h2>
+            <h3 class="subtitle"></h3>
+            <div class="card">
+              <div class="card-content qimp-container">
+                <figure class="image is-4by3">
+                  <img src="img/simpletorch.png" />
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h2 class="title">Cow Drop</h2>
+            <h3 class="subtitle"></h3>
+            <div class="card">
+              <div class="card-content qimp-container">
+                <figure class="image is-4by3">
+                  <img src="img/cowdrop.png" />
+                </figure>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -92,12 +193,45 @@
       <a name="extensions" class="navlink"></a>
       <div class="hero-head">
         <h1 class="title" style="font-size: 6rem;">
-          <img src="img/iconmonstr-puzzle-1.svg" style="width: 6rem;">Browser Extensions
+          <i class="fa fa-puzzle-piece"></i> Browser Extensions
           <i class="fa fa-chevron-up" style="float:right" aria-hidden="true"></i>
         </h1>
       </div>
       <div class="hero-body">
         <div class="container">
+          <div class="item">
+            <h2 class="title">Eyes On Things</h2>
+            <h3 class="subtitle"></h3>
+            <div class="card">
+              <div class="card-content qimp-container">
+                <figure class="image is-4by3">
+                  <img src="img/eyesonthings.png" />
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h2 class="title">HexTab</h2>
+            <h3 class="subtitle"></h3>
+            <div class="card">
+              <div class="card-content qimp-container">
+                <figure class="image is-4by3">
+                  <img src="img/hextab.png" />
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h2 class="title">Google tab fixer</h2>
+            <h3 class="subtitle"></h3>
+            <div class="card">
+              <div class="card-content qimp-container">
+                <figure class="image is-4by3">
+                  <img src="img/googletabfixer.png" />
+                </figure>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -105,19 +239,259 @@
       <a name="iceland" class="navlink"></a>
       <div class="hero-head">
         <h1 class="title" style="font-size: 6rem;">
-        <img src="img/iconmonstr-puzzle-1.svg" style="width: 6rem;">Iceland
+        <i class="fa fa-snowflake-o"></i> Iceland
         </h1>
       </div>
       <div class="hero-body">
-        <div class="container">
+        <div class="columns">
+          <div class="column is-8 iceland-text">
+
+<div class="maketitle">
+
+<h2 class="titleHead">Circumnavigating Iceland by Bike</h2>
+<div class="author" ><span 
+class="ecrm-1200">Sam Lee</span></div><br />
+<div class="date" ></div>
+   </div>
+   <h3 class="sectionHead"><span class="titlemark">1   </span> <a 
+ id="x1-10001"></a>Introduction</h3>
+<!--l. 21--><p class="noindent" >In September 2016, I left for a 1400km cycle tour around Iceland. My trip, partly funded by the
+Gladstone Memorial Trust, had been a goal of mine for many years.
+<!--l. 23--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">2   </span> <a 
+ id="x1-20002"></a>Arrival</h3>
+<!--l. 25--><p class="noindent" >I arrived in Iceland at 9am. The sun shone strongly through the cabin windows as we approached the
+landing, and greeted us with a surprising warmth when we stepped off the plane. A short bus ride
+later, and I was in the middle of Reykjavík. I set up my tent, and walked off to pick up my
+bike.
+<!--l. 28--><p class="indent" >   There was some confusion when I first arrived at the bike shop. The man who greeted me hurriedly
+put together a bike which had smoothed tires and a worn frame. I complained and we discovered a
+pre-prepared bike in the back of the shop for me. The new bike was much better - the
+frame was solid and brand new, the wheels were fresh and the grip still well formed, and
+the panniers were high quality waterproof Ortliebs with lots of capacity. As this was the
+first time I was seeing the equipment, renting was a bit of a gamble but it certainly paid
+off.
+<!--l. 31--><p class="indent" >   Tired from my flight, I thought I&#8217;d have a short nap before meeting my cousin Birna to discuss my
+trip. However, due to my flight fatigue, I woke up four hours later to 6 missed calls, having almost
+missed dinner entirely. Luckily her daughter, my second cousin, was able to pick me up and I made it
+just before the food was served.
+<!--l. 34--><p class="indent" >   I had not spoken to this part of my family before, so the dinner was a nice mix of getting to know
+each other and questions about my trip. I felt like I was being tested on my ability to complete the trip
+- which is something I am very grateful for, as it was a clear sign that my cousins cared and wanted to
+look after me.
+<!--l. 37--><p class="indent" >   That night I went back to my tent and resumed my interrupted sleep. Twelve hours later I got up
+for my last day in Reykjavík before I set off. I met with Auður, another cousin of mine who is a
+mountaineering guide and a generally experienced explorer in the Icelandic landscape. I faced a similar
+
+test, which lasted for a few hours, before having dinner with her and many other cousins, and staying
+for the night. The experience Auður shared with me was invaluable, as was the equipment she lent me
+for the journey.
+<!--l. 40--><p class="indent" >   The next morning, Auður took me on a final trip to the shop, showing me the food that she
+recommended (dried fish and smoked lamb, among other things), before dropping me off north of
+Reykjavík and leaving me with nothing to do but cycle.
+<!--l. 42--><p class="indent" >
+<!--l. 45--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">3   </span> <a 
+ id="x1-30003"></a>Cycling</h3>
+<!--l. 47--><p class="noindent" >I struggled at first to get everything attached to my bike. Not ten minutes after I was
+dropped off, the journey ahead of me seemed more daunting than ever, as the luggage I
+couldn&#8217;t fit into my panniers perched precariously on the back of my bike. 2 hours later, at
+the end of the fjord, the wind was so strong that the heavier gusts brought my bike to a
+standstill, and even the roadsigns, bent backwards from a collision long ago, looked as if
+they were losing the battle with the weather. After 80km I rolled into Borganes, the last
+town with a supermarket that I would encounter for the rest of the week, and set up my
+tent.
+<!--l. 49--><p class="indent" >   I spent an average of 9 hours cycling per day. With 1400km to cover, I had to spend the majority
+of my day cycling and learn to appreciate the landscape without stopping to admire it more closely.
+Despite the heavy traffic near Reykjavík and Akureyri, my main challenge on the road was certainly
+the weather. The wind was a drain on my morale, stealing the little speed I could pick up with over
+25kg of cargo. It fortunately only rained on a handful of days, but each rainfall was enough to keep my
+equipment sodden for several days, and the water reduced the effectiveness of my warm clothing. Near
+the end of my journey, 20km before Vik, I resorted to sucking the water out of my gloves
+one finger at a time just to bring some feeling back to my hands. On the cliffs above me,
+waterfalls turned to rainfall as the wind whipped then away from the rock&#8217;s surface. There were
+enough sunny days on my trip to make up for the rain. When the clouds parted, golden
+sunlight spilt over the mountains either side of me and often lifted my spirits along with my
+roadspeed.
+<!--l. 51--><p class="indent" >   Adjusting to the long distances was not easy, but after a week it was easier. My daily morning
+task, packing up my tent onto my bike, became second nature. I recognised which shops I
+needed to stop at, and which shops were useless to me. I even started to remember to cycle
+on the right hand side of the road. However, new problems started to surface; my knees,
+weakened by a running injury, began to hurt after each day of cycling. Luckily my knees
+didn&#8217;t get any worse throughout the trip, and I was able to continue to cycle at a reduced
+speed.
+<!--l. 53--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">4   </span> <a 
+ id="x1-40004"></a>Landscape</h3>
+<!--l. 55--><p class="noindent" >Iceland is experiencing a tourism boom. Last year, more than a million people descended onto the
+island - three times the native population. As my cousins were only too eager to show me, high profile
+guests like Justin Bieber have used the rugged landscape as a backdrop in videos, and there is even a
+bollywood music video filmed in Iceland. The country is universally portrayed in media as an
+untouched landscape, with boiling geysers shooting out of the ground next to frigid glaciers. I
+
+experienced this side of the landscape. Often I couldn&#8217;t count the number of waterfalls in my field of
+view. My route, the only road that encircles the country, cut through mountains and bore
+under fjords. And yet, I felt a pang of guilt when I passed the few natural features that are
+touted in music videos and tourist guides. The landscapes surrounding the attractions were
+flattened by years of heavy tourism. Crowds of people took the shortest route between the
+sights, ignoring the majority of the country and warping the terrain. I was one of these
+tourists, and it was sad to see how my trip could affect the fragile environment I was there to
+explore.
+<!--l. 57--><p class="indent" >
+<!--l. 60--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">5   </span> <a 
+ id="x1-50005"></a>Camping</h3>
+<!--l. 62--><p class="noindent" >Campsites are plentiful in Iceland. Frustratingly, they are rarely marked on maps, and each campsite
+will be on some maps but missing from others. Their quality varies significantly, with some boasting
+free warm showers and cooking facilities, and others just offering a flat square of land. The price,
+though, was pretty consistent; about 1200isk (£8) per night.
+<!--l. 64--><p class="indent" >   My favourite nights were spent in the wild. It is legal in Iceland to camp on any land that wasn&#8217;t
+too close to a farmhouse or intended for farming. Lifting my bike down the steep sides of the
+roads, any signs of civilisation quickly dropped away, replaced by trickling streams and
+swaths of moss and grass. Taking care to leave the land undamaged, I would set up my
+tent and start to cook dinner. The gas stove, strapped to the back of my bike all day,
+was often too cold and refused to work unless I got into a sleeping bag with it for a few
+minutes.
+<!--l. 66--><p class="indent" >   Waking up in the morning, I would stroll over to a river or waterfall to get cooking and
+drinking water for the next day, sometimes picking wild blueberries on the way. My tent was
+comfortable and warm, making it a daily challenge to exit, pack it all up and cycle off into the
+cold.
+<!--l. 68--><p class="indent" >
+<!--l. 70--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">6   </span> <a 
+ id="x1-60006"></a>Towns and cities</h3>
+<!--l. 72--><p class="noindent" >The majority of my time was spent outside of towns and cities. Aside from Reykjavík, there are only 4
+cities with more than 10,000 inhabitants. I often looked forward to arriving at a town spotted on my
+map, only to find when I arrived that the town consisted of a petrol station and some closely grouped
+farmhouses. Arriving at a town called Húnaver late one night, I was informed that hundreds of farmers
+were going to descend on the hall that evening for a sheep herding celebration. Having just cycled for 6
+hours through an uninhabited valley, I had a hard time imagining where these people had travelled
+from.
+<!--l. 74--><p class="indent" >   I spent 2 nights in Akureyri, the biggest city in the north of the country. It was an opportunity to
+speak with other travellers, and have time to visit restaurants in the area. Eating at a fish
+restaurant near my hotel, a miscommunication resulted in me trying some shark - not a wholly
+unpleasant experience. I stayed in a hostel, which was pricey but gave me a place to dry
+my clothes and to have a warm shower for the first time in a week. I enjoyed Akureyri,
+but couldn&#8217;t wait to get back to the Icelandic countryside when I woke up on the third
+day.
+
+<!--l. 76--><p class="indent" >
+<!--l. 79--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">7   </span> <a 
+ id="x1-70007"></a>People</h3>
+<!--l. 81--><p class="noindent" >The Icelandic people that I met were all incredibly friendly. Despite the vast numbers of tourists
+passing through the country every day, I could always ask for help or advice and receive a warm
+welcome. Although I met many people, one particular encounter sticks out. Arriving at Bifröst at
+around 4pm, wind-battered and soaking wet, I saw a sign for a coffee shop and excitedly pulled over at
+Bifröst hotel. Dripping on the floor of the reception, I was directed to a shop at the back of the hotel
+to pick up my coffee. To my dismay, the shop had closed half an hour before I arrived. When I told the
+receptionist what had happened, she offered me coffee from the hotel office, and even allowed me to sit
+inside to dry off. I left an hour later, my spirits lifted and my shoes less wet. I continued to cycle for
+a few hours, as the weather improved throughout the afternoon, before locking my bike
+to a roadsign and descending down a steep hill to find a flat piece of land for my tent.
+When I got back to my bike after a cold night, a jar of instant coffee was resting on top of
+it.
+<!--l. 83--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">8   </span> <a 
+ id="x1-80008"></a>Family</h3>
+<!--l. 85--><p class="noindent" >This cycling trip has been a target of mine for a long time. My grandmother, having grown up in
+Iceland, would tell me stories about the Icelandic countryside where she grew up, making me wonder
+why she ever left. Because of her, I have many relatives in Iceland. I met 8 of my first cousins, and
+more second cousins than I had time to count. As I mentioned at the start of this report, I was lucky
+to have done so. When arriving, I had dinner with my cousins and was given valuable advice about my
+trip. On one extremely windy day, my uncle Böggi was able to pick me up and drive me to
+Fáskrúðsfjörður, my grandmother&#8217;s home town, to stay with him for a few days. When I got back to
+Reykjavík I was welcomed into my cousins house for the week before my flight home. Their kindness
+made my trip much more enjoyable, and made me feel at home in a country as alien as
+Iceland.
+<!--l. 87--><p class="indent" >
+<!--l. 90--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">9   </span> <a 
+ id="x1-90009"></a>Conclusion</h3>
+<!--l. 92--><p class="noindent" >The one thing I thought about when leaving Iceland was when I would be going back. Every night in
+my tent I would write down in a notebook the towns and sights that I wanted to visit
+again, and the ones that I was unable to get to but wanted to experience in the future.
+Even though I spent a month there, I feel I have left with so much of the country still to
+explore.
+          </div>
+          <div class="column is-4">
+            <div id="iceland-image-gallery">
+              <p class="caption"></p>
+              <img src="img/IMG_7503.JPG" alt="Waterfall in a river" data-caption="A river meanders near my campsite. Iceland is volcanically young, and waterfalls are commonplace." onclick="document.getElementById('img7503').classList.add('is-active');" />
+              <div class="modal" id="img7503">
+                <div class="modal-background" onclick="event.target.parentElement.classList.remove('is-active');"></div>
+                <div class="modal-content">
+                  <p class="image is-4by3">
+                    <img src="img/IMG_7503.JPG" alt="">
+                  </p>
+                  <p class="caption">
+                    A river meanders near my campsite. Iceland is volcanically young, and waterfalls are commonplace.
+                 </p>
+                </div>
+                <button class="modal-close is-large" aria-label="close" onclick="event.target.parentElement.classList.remove('is-active');"></button>
+              </div>
+              <img src="img/IMG_7516.JPG" alt="Waterfall" data-caption="A slightly larger waterfall." onclick="document.getElementById('img7516').classList.add('is-active');" />
+              <div class="modal" id="img7516">
+                <div class="modal-background" onclick="event.target.parentElement.classList.remove('is-active');"></div>
+                <div class="modal-content">
+                  <p class="image is-4by3">
+                    <img src="img/IMG_7516.JPG" alt="">
+                  </p>
+                  <p class="caption">
+                    A slightly larger waterfall. This was visible from my tent, which was quite the way to wake up!
+                 </p>
+                </div>
+                <button class="modal-close is-large" aria-label="close" onclick="event.target.parentElement.classList.remove('is-active');"></button>
+              </div>
+              <img src="img/IMG_7518.JPG" alt="Wild Icelandic bluebberries" data-caption="Wild blueberries brave the weather on the side of Route 1, the ring road which circumscribes Iceland." onclick="document.getElementById('img7518').classList.add('is-active');" />
+              <div class="modal" id="img7518">
+                <div class="modal-background" onclick="event.target.parentElement.classList.remove('is-active');"></div>
+                <div class="modal-content">
+                  <p class="image is-4by3">
+                    <img src="img/IMG_7518.JPG" alt="">
+                  </p>
+                  <p class="caption">
+                    Wild blueberries brave the weather on the side of Route 1, the ring road which circumscribes Iceland.
+                 </p>
+                </div>
+                <button class="modal-close is-large" aria-label="close" onclick="event.target.parentElement.classList.remove('is-active');"></button>
+              </div>
+              <img src="img/IMG_7529.JPG" alt="Stream full of rocks" data-caption="Long grass holds together the banks of this rocky stream. Excluding rivers which run through farmland, all of the water I encountered in Iceland was potable." onclick="document.getElementById('img7529').classList.add('is-active');" />
+              <div class="modal" id="img7529">
+                <div class="modal-background" onclick="event.target.parentElement.classList.remove('is-active');"></div>
+                <div class="modal-content">
+                  <p class="image is-4by3">
+                    <img src="img/IMG_7529.JPG" alt="">
+                  </p>
+                  <p class="caption">
+                    Long grass holds together the banks of this rocky stream. Excluding rivers which run through farmland, all of the water I encountered in Iceland was potable.
+                 </p>
+                </div>
+                <button class="modal-close is-large" aria-label="close" onclick="event.target.parentElement.classList.remove('is-active');"></button>
+              </div>
+              <img src="img/IMG_7534.JPG" alt="My tent next to a river" data-caption="A river which I camped next to (green tent to the left of the picture)." onclick="document.getElementById('img7534').classList.add('is-active');" />
+              <div class="modal" id="img7534">
+                <div class="modal-background" onclick="event.target.parentElement.classList.remove('is-active');"></div>
+                <div class="modal-content">
+                  <p class="image is-4by3">
+                    <img src="img/IMG_7534.JPG" alt="">
+                  </p>
+                  <p class="caption">
+                    A river which I camped next to (green tent to the left of the picture).
+                  </p>
+                </div>
+                <button class="modal-close is-large" aria-label="close" onclick="event.target.parentElement.classList.remove('is-active');"></button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section class="hero is-primary is-fullheight">
-      <a name="Contact" class="navlink"></a>
+      <a name="contact" class="navlink"></a>
       <div class="hero-head">
         <h1 class="title" style="font-size: 6rem;">
-        <img src="img/iconmonstr-puzzle-1.svg" style="width: 6rem;">Get in touch
+        <i class="fa fa-envelope"></i> Get in touch
         </h1>
       </div>
       <div class="hero-body">
@@ -125,5 +499,6 @@
         </div>
       </div>
     </section>
+    <script src="lib/qimp.js"></script>
   </body>
 </html>
