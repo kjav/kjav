@@ -7,11 +7,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="lib/big.css">
-    <link rel="stylesheet" href="lib/imp.css">
     <script src="js/scroll.js"></script>
     <script src="js/rain.js"></script>
-    <script src="lib/snap.svg-min.js"></script>
   </head>
   <body onkeypress="var modals = document.getElementsByClassName('modal'); for (var i = 0; i < modals.length; i++) { modals[i].classList.remove('is-active'); }">
     <section class="hero is-white is-fullheight">
@@ -47,22 +44,34 @@
         </div>
       </div>
     </section>
-    <section class="hero is-black is-fullheight">
+    <section class="hero software is-black is-fullheight">
       <div class="hero-head">
         <h1 class="title" style="font-size: 6rem;">
         <i class="fa fa-terminal" aria-hidden="true"></i> Software
         </h1>
       </div>
-      <div class="hero-body">
+      <div class="hero-body" style="padding-top: 0">
         <div class="container software-content">
-          <h2 class="title imped">Qimp</h2>
-          <h3 class="subtitle">Sound cue software developed for the Oxford Imps</h3>
-          <div class="card">
-            <div class="card-content qimp-container">
-              <figure class="image is-4by3">
-                <img src="img/qimp1.png" />
-              </figure>
-            </div>
+          <div class="item">
+            <h2 class="title imped">Qimp</h2>
+            <h3 class="subtitle">Sound cue software developed for the Oxford Imps</h3>
+            <figure class="image">
+              <img src="img/qimp.png" />
+            </figure>
+          </div>
+          <div class="item">
+            <h2 class="title">FaceBlock</h2>
+            <h3 class="subtitle">Computer vision application used to automatically censor personal information in pictures.</h3>
+             <figure class="image">
+               <img src="img/faceblock.png" />
+             </figure>
+          </div>
+          <div class="item">
+            <h2 class="title">Drum tab converter</h2>
+            <h3 class="subtitle">A functional program written in Haskell which converts drum tabs to MusicXML file, an open format for sheet music representation.</h3>
+            <figure class="image">
+              <img src="img/drumtabconverter.png" />
+            </figure>
           </div>
         </div>
       </div>
@@ -74,40 +83,28 @@
         <i class="fa fa-terminal" aria-hidden="true"></i> Software
         </h1>
       </div>
-      <div class="hero-body">
-        <div class="container">
+      <div class="hero-body" style="padding-top: 0">
+        <div class="container software-content">
           <div class="item">
-            <h2 class="title">Qimp</h2>
+            <h2 class="title imped">Qimp</h2>
             <h3 class="subtitle">Sound cue software developed for the Oxford Imps</h3>
-            <div class="card">
-              <div class="card-content qimp-container">
-                <figure class="image is-4by3">
-                  <img src="img/qimp1.png" />
-                </figure>
-              </div>
-            </div>
+            <figure class="image">
+              <img src="img/qimp.png" />
+            </figure>
           </div>
           <div class="item">
             <h2 class="title">FaceBlock</h2>
             <h3 class="subtitle">Computer vision application used to automatically censor personal information in pictures.</h3>
-            <div class="card">
-              <div class="card-content qimp-container">
-                <figure class="image is-4by3">
-                  <img src="img/faceblock.png" />
-                </figure>
-              </div>
-            </div>
+             <figure class="image">
+               <img src="img/faceblock.png" />
+             </figure>
           </div>
           <div class="item">
             <h2 class="title">Drum tab converter</h2>
             <h3 class="subtitle">A functional program written in Haskell which converts drum tabs to MusicXML file, an open format for sheet music representation.</h3>
-            <div class="card">
-              <div class="card-content qimp-container">
-                <figure class="image is-4by3">
-                  <img src="img/qimp1.png" />
-                </figure>
-              </div>
-            </div>
+            <figure class="image">
+              <img src="img/drumtabconverter.png" />
+            </figure>
           </div>
         </div>
       </div>
@@ -124,35 +121,23 @@
           <div class="item">
             <h2 class="title">Noisy Leaf</h2>
             <h3 class="subtitle">Website for </h3>
-            <div class="card">
-              <div class="card-content qimp-container">
-                <figure class="image is-4by3">
-                  <img src="img/noisyleaf.png" />
-                </figure>
-              </div>
-            </div>
+            <figure class="image">
+              <img src="img/noisyleaf.png" />
+            </figure>
           </div>
           <div class="item">
             <h2 class="title">101drum</h2>
             <h3 class="subtitle">Drum tab website with intelligent search feature.</h3>
-            <div class="card">
-              <div class="card-content qimp-container">
-                <figure class="image is-4by3">
-                  <img src="img/101drum.png" />
-                </figure>
-              </div>
-            </div>
+            <figure class="image">
+              <img src="img/101drum.png" />
+            </figure>
           </div>
           <div class="item">
             <h2 class="title">Malaria Map</h2>
             <h3 class="subtitle"></h3>
-            <div class="card">
-              <div class="card-content qimp-container">
-                <figure class="image is-4by3">
-                  <img src="img/malariamap.png" />
-                </figure>
-              </div>
-            </div>
+            <figure class="image">
+              <img src="img/malariamap.png" />
+            </figure>
           </div>
         </div>
       </div>
@@ -169,24 +154,16 @@
           <div class="item">
             <h2 class="title">Simple Torch</h2>
             <h3 class="subtitle"></h3>
-            <div class="card">
-              <div class="card-content qimp-container">
-                <figure class="image is-4by3">
-                  <img src="img/simpletorch.png" />
-                </figure>
-              </div>
-            </div>
+            <figure class="image">
+              <img src="img/simpletorch.png" />
+            </figure>
           </div>
           <div class="item">
             <h2 class="title">Cow Drop</h2>
             <h3 class="subtitle"></h3>
-            <div class="card">
-              <div class="card-content qimp-container">
-                <figure class="image is-4by3">
-                  <img src="img/cowdrop.png" />
-                </figure>
-              </div>
-            </div>
+            <figure class="image">
+              <img src="img/cowdrop.png" />
+            </figure>
           </div>
         </div>
       </div>
@@ -204,35 +181,23 @@
           <div class="item">
             <h2 class="title">Eyes On Things</h2>
             <h3 class="subtitle"></h3>
-            <div class="card">
-              <div class="card-content qimp-container">
-                <figure class="image is-4by3">
-                  <img src="img/eyesonthings.png" />
-                </figure>
-              </div>
-            </div>
+            <figure class="image is-4by3">
+              <img src="img/eyesonthings.png" />
+            </figure>
           </div>
           <div class="item">
             <h2 class="title">HexTab</h2>
             <h3 class="subtitle"></h3>
-            <div class="card">
-              <div class="card-content qimp-container">
-                <figure class="image is-4by3">
-                  <img src="img/hextab.png" />
-                </figure>
-              </div>
-            </div>
+            <figure class="image is-4by3">
+              <img src="img/hextab.png" />
+            </figure>
           </div>
           <div class="item">
             <h2 class="title">Google tab fixer</h2>
             <h3 class="subtitle"></h3>
-            <div class="card">
-              <div class="card-content qimp-container">
-                <figure class="image is-4by3">
-                  <img src="img/googletabfixer.png" />
-                </figure>
-              </div>
-            </div>
+            <figure class="image is-4by3">
+              <img src="img/googletabfixer.png" />
+            </figure>
           </div>
         </div>
       </div>
@@ -419,12 +384,12 @@ explore.
           <div class="column is-4">
             <div id="iceland-image-gallery">
               <p class="caption"></p>
-              <img src="https://www.101drum.com/kjavlabimages/IMG_7503.JPG" alt="Waterfall in a river" data-caption="A river meanders near my campsite. Iceland is volcanically young, and waterfalls are commonplace." onclick="document.getElementById('img7503').classList.add('is-active');" />
+              <img src="img/IMG_7503_g.JPG" alt="Waterfall in a river" data-caption="A river meanders near my campsite. Iceland is volcanically young, and waterfalls are commonplace." onclick="document.getElementById('img7503').classList.add('is-active');" />
               <div class="modal" id="img7503">
                 <div class="modal-background" onclick="event.target.parentElement.classList.remove('is-active');"></div>
                 <div class="modal-content">
                   <p class="image is-4by3">
-                    <img src="img/IMG_7503.JPG" alt="">
+                    <img src="img/IMG_7503_g.JPG" alt="">
                   </p>
                   <p class="caption">
                     A river meanders near my campsite. Iceland is volcanically young, and waterfalls are commonplace.
@@ -432,12 +397,12 @@ explore.
                 </div>
                 <button class="modal-close is-large" aria-label="close" onclick="event.target.parentElement.classList.remove('is-active');"></button>
               </div>
-              <img src="img/IMG_7516.JPG" alt="Waterfall" data-caption="A slightly larger waterfall." onclick="document.getElementById('img7516').classList.add('is-active');" />
+              <img src="img/IMG_7516_g.JPG" alt="Waterfall" data-caption="A slightly larger waterfall." onclick="document.getElementById('img7516').classList.add('is-active');" />
               <div class="modal" id="img7516">
                 <div class="modal-background" onclick="event.target.parentElement.classList.remove('is-active');"></div>
                 <div class="modal-content">
                   <p class="image is-4by3">
-                    <img src="img/IMG_7516.JPG" alt="">
+                    <img src="img/IMG_7516_g.JPG" alt="">
                   </p>
                   <p class="caption">
                     A slightly larger waterfall. This was visible from my tent, which was quite the way to wake up!
@@ -445,12 +410,12 @@ explore.
                 </div>
                 <button class="modal-close is-large" aria-label="close" onclick="event.target.parentElement.classList.remove('is-active');"></button>
               </div>
-              <img src="img/IMG_7518.JPG" alt="Wild Icelandic bluebberries" data-caption="Wild blueberries brave the weather on the side of Route 1, the ring road which circumscribes Iceland." onclick="document.getElementById('img7518').classList.add('is-active');" />
+              <img src="img/IMG_7518_g.JPG" alt="Wild Icelandic bluebberries" data-caption="Wild blueberries brave the weather on the side of Route 1, the ring road which circumscribes Iceland." onclick="document.getElementById('img7518').classList.add('is-active');" />
               <div class="modal" id="img7518">
                 <div class="modal-background" onclick="event.target.parentElement.classList.remove('is-active');"></div>
                 <div class="modal-content">
                   <p class="image is-4by3">
-                    <img src="img/IMG_7518.JPG" alt="">
+                    <img src="img/IMG_7518_g.JPG" alt="">
                   </p>
                   <p class="caption">
                     Wild blueberries brave the weather on the side of Route 1, the ring road which circumscribes Iceland.
@@ -458,12 +423,12 @@ explore.
                 </div>
                 <button class="modal-close is-large" aria-label="close" onclick="event.target.parentElement.classList.remove('is-active');"></button>
               </div>
-              <img src="img/IMG_7529.JPG" alt="Stream full of rocks" data-caption="Long grass holds together the banks of this rocky stream. Excluding rivers which run through farmland, all of the water I encountered in Iceland was potable." onclick="document.getElementById('img7529').classList.add('is-active');" />
+              <img src="img/IMG_7529_g.JPG" alt="Stream full of rocks" data-caption="Long grass holds together the banks of this rocky stream. Excluding rivers which run through farmland, all of the water I encountered in Iceland was potable." onclick="document.getElementById('img7529').classList.add('is-active');" />
               <div class="modal" id="img7529">
                 <div class="modal-background" onclick="event.target.parentElement.classList.remove('is-active');"></div>
                 <div class="modal-content">
                   <p class="image is-4by3">
-                    <img src="img/IMG_7529.JPG" alt="">
+                    <img src="img/IMG_7529_g.JPG" alt="">
                   </p>
                   <p class="caption">
                     Long grass holds together the banks of this rocky stream. Excluding rivers which run through farmland, all of the water I encountered in Iceland was potable.
@@ -471,12 +436,12 @@ explore.
                 </div>
                 <button class="modal-close is-large" aria-label="close" onclick="event.target.parentElement.classList.remove('is-active');"></button>
               </div>
-              <img src="img/IMG_7534.JPG" alt="My tent next to a river" data-caption="A river which I camped next to (green tent to the left of the picture)." onclick="document.getElementById('img7534').classList.add('is-active');" />
+              <img src="img/IMG_7534_g.JPG" alt="My tent next to a river" data-caption="A river which I camped next to (green tent to the left of the picture)." onclick="document.getElementById('img7534').classList.add('is-active');" />
               <div class="modal" id="img7534">
                 <div class="modal-background" onclick="event.target.parentElement.classList.remove('is-active');"></div>
                 <div class="modal-content">
                   <p class="image is-4by3">
-                    <img src="img/IMG_7534.JPG" alt="">
+                    <img src="img/IMG_7534_g.JPG" alt="">
                   </p>
                   <p class="caption">
                     A river which I camped next to (green tent to the left of the picture).
@@ -501,6 +466,6 @@ explore.
         </div>
       </div>
     </section>
-    <script src="lib/qimp.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
